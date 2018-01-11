@@ -1,0 +1,12 @@
+with open('str2dict.txt', 'r') as f:
+	data = f.read().split('\n')
+
+dict0 = {}
+for n in data:
+	if not n.isdigit():
+		key = n
+		dict0[key] = []
+	else:
+		dict0[key].append(int(n))
+
+print(dict0)
