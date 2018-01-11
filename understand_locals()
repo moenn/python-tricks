@@ -1,0 +1,10 @@
+# The locals() method updates and returns the dictionary associated with the current local symbol table.
+def localsNotPresent():
+    return locals()
+
+def localsPresent():
+    present = True
+    return locals()
+
+print('localsNotPresent:', localsNotPresent())
+print('localsPresent:', localsPresent())
